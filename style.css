@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color codes
+dark green: #1C2A2B
+dark grey : #24282B
+
+/* Temporary Styles*/
+
+*{
+  padding:0.5rem;
+  border: 1px solid;  
+}
+
+/* End Temp Styles */
+
+html, body {
+    border: none;
+}
+
+
+/*  Utility Classes */ 
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded-sm { padding: 2.5%; }
+.padded { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+
+/*text alignment*/
+
+.left    { text-align: left; }
+.right   { text-align: right; }
+.center  { text-align: center; }
+
+/*Universal Typography styles*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p, a, li{
+    font-weight: 300;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3{line-height:1;}
+
+p {
+    font-weight:200;
+line-height:1.5;
+margin-bottom: 1rem;
+}
+
+p:last-child{
+    margin-bottom:0;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.heading {
+    color:white;
+    font-size: 7rem;
+}
+
+/* Background colors */
+
+.bg-featured {
+    background-color: #1C2A2B;
+    color:white;
+}
+
+.bg-dark {
+    background-color: #24282B;
+    color:white;
+}
+
+/* Background Images */
+
+.bg-image{
+    background-color:#24282B;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url('/images/the-bunker-5.jpg');
+}
+
+.bg-roof {
+    background-image: url('/images/the-bunker-5.jpg');
+}
+
+.bg-map {
+    background-image: url('/images/map-sydney.png');
+}
+
+.bg-lamp {
+    background-image: url('/images/the-bunker-1.jpg');
+}
+
+.bg-bed {
+    background-image: url('/images/the-bunker-7.jpg');
+}
+
+.bg-hall {
+    background-image: url('/images/the-bunker-3.jpg');
+}
+
+.bg-chairs {
+    background-image: url('/images/the-bunker-2.jpg');
+}
+
+.bg-hotel {
+    background-image: url('/images/the-bunker-4.jpg');
+}
+
+.bg-padded {
+    padding-bottom: 30%;
+}
+
+.social-banner { background-position: 50% 17%;}
