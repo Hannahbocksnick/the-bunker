@@ -4,23 +4,12 @@
     box-sizing: border-box;
 }
 
-/* color codes
-dark green: #1C2A2B
-dark grey : #24282B
-
-/* Temporary Styles*/
-
-*{
-  padding:0.5rem;
-  border: 1px solid;  
-}
-
-/* End Temp Styles */
 
 html, body {
     border: none;
 }
 
+.light-text {color:white;}
 
 /*  Utility Classes */ 
 
@@ -38,40 +27,43 @@ html, body {
 .padded-1 { padding: 1rem; }
 .padded-2 { padding: 2rem; }
 
+.margin-b-0 {margin-bottom:0;}
+
+/* Aspect Ratio */
+.portrait-tall {padding-bottom: 175%;}
+.portrait {padding-bottom: 125%;}
+.square {padding-bottom: 100%;}
+.landscape { padding-bottom: 66%;}
+.landscape-wide {padding-bottom: 56%;}
+
 /*text alignment*/
 
 .left    { text-align: left; }
 .right   { text-align: right; }
 .center  { text-align: center; }
 
-/*Universal Typography styles*/
+/* Universal Typography styles*/
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: #1C2A2B;
+
 }
 
 h1, h2, h3, h4 ,h5, h6 {
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom:0.5rem;
 }
 
-p, a, li{
+p, li{
     font-weight: 300;
+    line-height: 1.4;
+    margin-bottom:0.8rem;
+    font-size: 1.1rem;
 }
 
-h2 {
-    margin-bottom: 1rem;
-}
-
-h3{line-height:1;}
-
-p {
-    font-weight:200;
-line-height:1.5;
-margin-bottom: 1rem;
-}
-
-p:last-child{
+p:last-child, li:last-child {
     margin-bottom:0;
 }
 
@@ -80,10 +72,46 @@ a{
     text-decoration:none;
 }
 
-.heading {
-    color:white;
-    font-size: 7rem;
+a:hover{
+    color:#4D6059;
 }
+
+.fab {
+    font-size:1.5rem;
+    padding:1rem;
+}
+
+h1 {
+    color:white;
+    font-size: 8rem;
+}
+
+h2 {
+    font-size:2.5rem
+}
+
+h3{font-size:1.8rem;
+}
+
+
+
+/*Footer*/
+
+footer h2{
+    font-size: 4rem;
+}
+
+footer p {
+    margin-bottom:0.2rem;
+}
+
+.subtle {opacity:0.8;
+font-size:0.9rem;
+font-style: italic;
+}
+
+
+.not-bold{font-weight:400;}
 
 /* Background colors */
 
@@ -109,6 +137,12 @@ a{
 
 .bg-roof {
     background-image: url('/images/the-bunker-5.jpg');
+}
+
+.bg-roof-social {
+    background-image: url('/images/the-bunker-5.jpg');
+    background-position: top;
+
 }
 
 .bg-map {
@@ -139,4 +173,6 @@ a{
     padding-bottom: 30%;
 }
 
-.social-banner { background-position: 50% 17%;}
+.bg-padded {
+    padding-bottom:30%;
+}
