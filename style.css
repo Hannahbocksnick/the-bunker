@@ -86,13 +86,9 @@ h1 {
     font-size: 8rem;
 }
 
-h2 {
-    font-size:2.5rem
-}
+h2 {font-size:2.5rem}
 
-h3{font-size:1.8rem;
-}
-
+h3{font-size:1.8rem;}
 
 
 /*Footer*/
@@ -175,4 +171,23 @@ font-style: italic;
 
 .bg-padded {
     padding-bottom:30%;
+}
+
+
+/* SM - max-width in pixels approximately 768px */
+@media (max-width: 48em) {
+
+    .hide-sm { display: none; }
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    h1 { font-size: 4rem; }
+
+    footer h2 { font-size: 3rem; }
+
+    .social-banner {
+        background-image: none; 
+        background-color: #1C2A2C;
+        min-height: 30vh;
+    }
 }
